@@ -1,151 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Samson Sports | Basketball • Coaching • Community • Sports Retail</title>
-<meta name="description" content="Samson Sports — basketball, coaching, community and sports retail. Home of Pampanga Raptors.">
-<style>
-:root{--red:#d71920;--black:#080808;--dark:#111;--gray:#1b1b1b;--muted:#a9a9a9;--white:#fff}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#080808;color:#fff;font-family:Arial,Helvetica,sans-serif;line-height:1.5}
-a{color:inherit;text-decoration:none}.container{width:min(1160px,92%);margin:auto}
-nav{position:sticky;top:0;z-index:20;background:rgba(8,8,8,.94);border-bottom:1px solid #292929;backdrop-filter:blur(10px)}
-.navin{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:900;letter-spacing:1.5px;font-size:20px}.brand span{color:var(--red)}
-.links{display:flex;gap:24px;align-items:center;font-size:13px;font-weight:700;text-transform:uppercase}.links a:hover{color:#ff4a4f}.navcta{background:var(--red);padding:11px 16px;border-radius:6px}
-.hero{min-height:690px;display:flex;align-items:center;position:relative;overflow:hidden;background:radial-gradient(circle at 75% 35%,#3b0c0f 0,#17090a 24%,#080808 58%)}
-.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#080808 0%,rgba(8,8,8,.88) 40%,rgba(8,8,8,.28) 100%);pointer-events:none}
-.heroart{position:absolute;right:-5%;top:0;width:62%;height:100%;background:linear-gradient(135deg,transparent 0 35%,rgba(215,25,32,.15) 36% 55%,transparent 56%);transform:skewX(-8deg)}
-.hero .container{position:relative;z-index:2}.eyebrow{color:#ff555a;font-weight:900;letter-spacing:3px;font-size:12px;text-transform:uppercase}.hero h1{font-size:clamp(52px,8vw,104px);line-height:.9;margin:15px 0 20px;letter-spacing:-4px}.hero h1 span{color:var(--red)}.hero p{max-width:590px;color:#d0d0d0;font-size:18px}.buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.btn{display:inline-block;padding:14px 20px;border-radius:7px;font-weight:900;font-size:13px;text-transform:uppercase;border:1px solid #444}.btn.primary{background:var(--red);border-color:var(--red)}.btn.dark{background:#151515}
-.stats{background:#101010;border-top:1px solid #242424;border-bottom:1px solid #242424}.statgrid{display:grid;grid-template-columns:repeat(4,1fr)}.stat{padding:25px 18px;border-right:1px solid #242424}.stat:last-child{border:0}.stat b{font-size:30px}.stat small{display:block;color:#999;text-transform:uppercase;font-size:10px;letter-spacing:1.5px;margin-top:3px}
-section{padding:85px 0}.sectionhead{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:35px}.sectionhead h2{font-size:42px;line-height:1;margin:0;letter-spacing:-1.5px}.sectionhead p{color:#aaa;max-width:500px;margin:0}
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#111;border:1px solid #292929;border-radius:12px;overflow:hidden}.cardbody{padding:24px}.tag{font-size:10px;color:#ff555a;text-transform:uppercase;letter-spacing:1.7px;font-weight:900}.card h3{font-size:24px;margin:8px 0}.card p{color:#aaa}.arrow{color:#fff;font-weight:900}
-.raptors{background:linear-gradient(135deg,#16090a,#0c0c0c 55%)}.feature{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:stretch}.featurebox{padding:40px;background:#0d0d0d;border:1px solid #3a1719;border-radius:14px}.featurebox h3{font-size:48px;line-height:.95;margin:10px 0}.featurebox p{color:#bbb}.mini{display:grid;grid-template-columns:1fr 1fr;gap:14px}.mini .tile{padding:25px;background:#151515;border:1px solid #2b2b2b;border-radius:10px}.tile b{display:block;font-size:30px}.tile span{color:#999;font-size:12px;text-transform:uppercase}
-.shopgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.shopcard{min-height:230px;background:linear-gradient(145deg,#181818,#0d0d0d);border:1px solid #292929;border-radius:12px;padding:26px;display:flex;flex-direction:column;justify-content:end}.shopcard .icon{font-size:42px;margin-bottom:auto}.shopcard h3{margin:12px 0 3px;font-size:25px}.shopcard p{color:#999;margin:0}
-.media{background:#101010}.media .video{aspect-ratio:16/9;background:#191919;border-radius:12px;border:1px solid #2a2a2a;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px}.play{width:70px;height:70px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;font-size:25px;margin:auto}
-.about{display:grid;grid-template-columns:1fr 1fr;gap:50px}.about h2{font-size:46px;line-height:1;margin:0 0 18px}.about p{color:#aaa}.quote{border-left:3px solid var(--red);padding-left:20px;color:#ddd;font-size:18px}
-.socials{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.social{background:#111;border:1px solid #292929;padding:24px;border-radius:10px}.social strong{display:block;font-size:18px}.social span{color:#999;font-size:12px}
-.contact{background:var(--red)}.contact h2{font-size:52px;line-height:1;margin:0 0 12px}.contact p{max-width:620px;color:#ffe1e1}.contact .btn{background:#080808;border-color:#080808}
-footer{padding:35px 0;color:#777;font-size:12px;border-top:1px solid #222}.footerin{display:flex;justify-content:space-between;gap:20px}
-@media(max-width:850px){.links a:not(.navcta){display:none}.statgrid{grid-template-columns:1fr 1fr}.feature,.about{grid-template-columns:1fr}.grid3,.shopgrid{grid-template-columns:1fr}.hero{min-height:600px}.hero h1{letter-spacing:-2px}.socials{grid-template-columns:1fr 1fr}}
-@media(max-width:520px){section{padding:60px 0}.stat{padding:18px 10px}.stat b{font-size:24px}.sectionhead h2{font-size:34px}.contact h2{font-size:40px}.footerin{flex-direction:column}}
-</style>
-</head>
-<body>
-<nav>
-<div class="container navin">
-<a class="brand" href="#home">SAMSON <span>SPORTS</span></a>
-<div class="links">
-<a href="#raptors">Raptors</a><a href="#shop">Shop</a><a href="#media">Media</a><a href="#about">About</a>
-<a class="navcta" href="#contact">Contact</a>
-</div>
-</div>
-</nav>
+<section id="history" style="padding: 40px 20px; background: #111; color: #fff; font-family: sans-serif;">
+  <div style="max-width: 800px; margin: 0 auto;">
+    <h2 style="font-size: 2.5rem; color: #f39c12; margin-bottom: 20px; text-align: center;">🏀 THE RAPTORS STORY</h2>
+    
+    <div style="margin-bottom: 30px;">
+      <h3 style="color: #f39c12;">2020 — Where It All Began: Marcons Jokers</h3>
+      <p>The story started in 2020 at Marcons PH1, with a group of players from La Rose Noire and Marcons PH1 coming together to play basketball. At that time, the team was known as Marcons Jokers, wearing a purple and black alternate jersey. The team eventually joined the newly established Cabalen Basketball League (CBA) in Angeles City. However, the basketball journey was temporarily put on hold when the COVID-19 lockdown brought local basketball activities to a stop. But the team was not finished.</p>
+    </div>
 
-<header class="hero" id="home">
-<div class="heroart"></div>
-<div class="container">
-<div class="eyebrow">Basketball • Coaching • Community • Sports Retail</div>
-<h1>PLAY.<br><span>LEAD.</span><br>BUILD.</h1>
-<p>Samson Sports brings basketball, coaching, community and sports retail together — with Pampanga Raptors at the heart of the story. The Raptors began during the pandemic around 2020, while Samson Sports was established in 2024.</p>
-<div class="buttons">
-<a class="btn primary" href="#raptors">Explore Pampanga Raptors</a>
-<a class="btn dark" href="#shop">Visit Samson Sports</a>
-</div>
-</div>
-</header>
+    <div style="margin-bottom: 30px;">
+      <h3 style="color: #f39c12;">2022 — The Beginning of a New Chapter</h3>
+      <p>In 2022, Michael Glenn Samson and his friend Mark Manalus, CEO of PPL, started the Pampanga Basketball League (PPL). The team returned to competition under the name Marcons Jokers, this time wearing a maroon jersey. This became an important turning point, and the journey never stopped.</p>
+    </div>
 
-<div class="stats"><div class="container statgrid">
-<div class="stat"><b>2024</b><small>Samson Sports Established</small></div>
-<div class="stat"><b>2020</b><small>Raptors Began Around Pandemic</small></div>
-<div class="stat"><b>30+</b><small>Years Around Basketball</small></div>
-<div class="stat"><b>6</b><small>Recorded Championships</small></div>
-</div></div>
+    <div style="margin-bottom: 30px;">
+      <h3 style="color: #f39c12;">2022–2023 — Building the Team</h3>
+      <p>The Marcons Jokers continued into another PPL season, finishing 2nd Runner-Up. The team later introduced a new identity known as The Boys, wearing a beige jersey, and later added a dark grey jersey, campaigning through the Hafa Adai Basketball League and PPL.</p>
+    </div>
 
-<section id="raptors" class="raptors">
-<div class="container">
-<div class="sectionhead"><div><div class="eyebrow">The Team</div><h2>Pampanga Raptors</h2></div><p>A recurring part of Michael Glenn Samson's competitive journey, leadership experience and local basketball community.</p></div>
-<div class="feature">
-<div class="featurebox">
-<div class="tag">Home of the Raptors</div><h3>ONE TEAM.<br>ONE COMMUNITY.</h3>
-<p>Explore the Raptors story, roster archives, real team photos, team achievements, videos and basketball activities.</p>
-<div class="buttons"><a class="btn primary" href="raptors.html">Open Raptors + Roster</a><a class="btn dark" href="https://www.youtube.com/@pampangaraptors" target="_blank" rel="noopener">Watch YouTube</a></div>
-</div>
-<div class="mini">
-<div class="tile"><b>2020</b><span>Raptors Began Around Pandemic</span></div>
-<div class="tile"><b>2024</b><span>Samson Sports Established</span></div>
-<div class="tile"><b>~6</b><span>Raptors Runner-Up Finishes</span></div>
-<div class="tile"><b>#3</b><span>Michael Glenn Samson</span></div>
-</div>
-</div>
-</div>
+    <div style="margin-bottom: 30px;">
+      <h3 style="color: #f39c12;">🦖 THE BIRTH OF THE RAPTORS</h3>
+      <p>Inspired by the Toronto Raptors, the team decided to call itself the Raptors. Though a planned purple uniform was never printed, the team ended up with a maroon and golden-yellow alternate jersey. And that became the first Raptors uniform. The Raptors were born.</p>
+    </div>
+
+    <div style="margin-bottom: 30px;">
+      <h3 style="color: #f39c12;">🏆 THE RAPTORS START MAKING THEIR MARK</h3>
+      <p>The next PPL season introduced the yellow Raptors jersey, where the team finished <strong>🥈 1st Runner-Up</strong> in an open-age league. They expanded into Astro Basketball League (Semifinals), Quarenta Ballers (🥈 1st Runner-Up), and 3J League 35+ (Quarterfinals).</p>
+    </div>
+
+    <div style="margin-bottom: 30px;">
+      <h3 style="color: #f39c12;">🔥 MORE LEAGUES. MORE FINALS.</h3>
+      <p>The Raptors returned to Astro League Season 2 (Semifinals), Quarenta Ballers 35+ (🥈 1st Runner-Up), and PPL Exclusive wearing a Gilas Pilipinas-inspired blue jersey (🥈 1st Runner-Up).</p>
+    </div>
+
+    <div style="margin-bottom: 30px;">
+      <h3 style="color: #f39c12;">🔵 AUTOKRANK RAPTORS ERA</h3>
+      <p>Introducing a fresh identity as the <strong>Autocrank Raptors</strong>, the team competed across Hafa Adai (2nd Runner-Up), Clark Papawis League (3rd Runner-Up), Quarenta Ballers Open Age Season 2 (🥈 1st Runner-Up), Kumpares, and PPL Angeles.</p>
+    </div>
+
+    <div style="margin-bottom: 30px;">
+      <h3 style="color: #f39c12;">⚪🔵 A NEW GENERATION &amp; 🏆 THE CHAMPIONSHIP</h3>
+      <p>Following a 3rd Runner-Up finish with their white and dark blue inter-barangay lineup, the Raptors entered DHBL Exclusive Season 2 with a completely different look: <strong>Purple and Gold — Lakers-style jersey</strong>. After years of hard work, the team finally captured their <strong>🏆 FIRST CHAMPIONSHIP</strong>.</p>
+    </div>
+
+    <div style="margin-bottom: 30px;">
+      <h3 style="color: #f39c12;">🔥 TODAY — HUSTLE BALLERS × RAPTORS</h3>
+      <p>Today, the team carries the name <strong>Hustle Ballers × Raptors</strong>, competing across CBL, CFA, and Sunday Papawis League (all reaching Semifinals). The names, jerseys, and players may evolve, but the purpose remains: keep playing, keep competing, keep building.</p>
+    </div>
+
+    <div style="background: #222; padding: 20px; border-left: 4px solid #f39c12; margin-top: 40px;">
+      <p style="font-style: italic; margin: 0;">“From Marcons Jokers to Raptors, the journey has never been about one jersey, one roster, or one league. The jerseys changed. The lineups changed. The leagues changed. But the Raptors kept going. And the story is still being written.”</p>
+    </div>
+  </div>
 </section>
-
-<section id="shop">
-<div class="container">
-<div class="sectionhead"><div><div class="eyebrow">Sports Retail</div><h2>Samson Sports Shop</h2></div><p>Basketball shoes and sports gear connected to an active player, coach and local sports community. TikTok is the checkout point for Samson Sports products.</p></div>
-<div class="shopgrid">
-<div class="shopcard"><div class="icon">👟</div><h3>Basketball Shoes</h3><p>Featured footwear and basketball-ready picks.</p></div>
-<div class="shopcard"><div class="icon">🏀</div><h3>Sports Gear</h3><p>Equipment and essentials for players and teams.</p></div>
-<div class="shopcard"><div class="icon">👕</div><h3>Team & Apparel</h3><p>Future space for team products and apparel.</p></div>
-</div>
-<div class="buttons">
-<a class="btn primary" href="https://www.tiktok.com/@samsonsports" target="_blank" rel="noopener">Shop on TikTok</a>
-</div>
-<p style="margin-top:14px;color:#888;font-size:12px">TikTok is the official checkout point for Samson Sports products. Visit @samsonsports to browse products and complete your purchase.</p>
-</div>
-</section>
-
-<section id="media" class="media">
-<div class="container">
-<div class="sectionhead"><div><div class="eyebrow">Samson Sports Media</div><h2>Basketball Stories</h2></div><p>Content around basketball, coaching, products, teams and community.</p></div>
-<div class="feature">
-<div class="video"><div><div class="play">▶</div><h3>Pampanga Raptors on YouTube</h3><p>Watch games, highlights and team content.</p><a class="btn primary" href="https://www.youtube.com/@pampangaraptors" target="_blank" rel="noopener">Open YouTube Channel</a></div></div>
-<div class="featurebox"><div class="tag">Future Media Hub</div><h3>NEWS.<br>VIDEO.<br>COMMUNITY.</h3><p>This section is ready for Raptors news, game reports, interviews, features, photo galleries and sports stories.</p><a class="btn dark" href="#contact">Send a Story / Partnership Inquiry</a></div>
-</div>
-</div>
-</section>
-
-<section id="about">
-<div class="container about">
-<div><div class="eyebrow">About</div><h2>Michael Glenn Samson</h2>
-<p>Michael Glenn Samson is a basketball player and coach and the founder of Samson Sports. His basketball journey began around age eight and has developed through playing, coaching, team leadership and community involvement.</p>
-<p>Coaching became a focused part of his journey around 2019, with documented Best Coach recognition in PPL and DHBL leagues.</p>
-<div class="quote">“A team, a community, a legacy.”</div>
-</div>
-<div>
-<div class="eyebrow">The Brand</div><h2>Samson Sports</h2>
-<p>Established in 2024, Samson Sports is a sports-focused online business selling basketball shoes and sports gear through social media, with TikTok serving as the checkout point.</p>
-<p>The website brings the brand's basketball community, Raptors activities, media and retail presence together in one place.</p>
-<div class="buttons"><a class="btn primary" href="https://www.instagram.com/michaelsamsonplays" target="_blank" rel="noopener">Follow Instagram</a></div>
-</div>
-</div>
-</section>
-
-<section>
-<div class="container">
-<div class="sectionhead"><div><div class="eyebrow">Stay Connected</div><h2>Follow Samson Sports</h2></div><p>Choose where you want to follow the latest basketball and Samson Sports content.</p></div>
-<div class="socials">
-<a class="social" href="https://www.facebook.com/michaelglennsamson" target="_blank" rel="noopener"><strong>Facebook</strong><span>Michael Glenn Samson</span></a>
-<a class="social" href="https://www.instagram.com/michaelsamsonplays" target="_blank" rel="noopener"><strong>Instagram</strong><span>@michaelsamsonplays</span></a>
-<a class="social" href="https://www.tiktok.com/@samsonsports" target="_blank" rel="noopener"><strong>TikTok</strong><span>@samsonsports</span></a>
-<a class="social" href="https://www.youtube.com/@pampangaraptors" target="_blank" rel="noopener"><strong>YouTube</strong><span>@pampangaraptors</span></a>
-</div>
-</div>
-</section>
-
-<section class="contact" id="contact">
-<div class="container">
-<div class="eyebrow" style="color:#080808">Let's Connect</div>
-<h2>Basketball starts with community.</h2>
-<p>For Samson Sports, product inquiries, Raptors matters, media opportunities or partnerships, contact Michael Glenn Samson.</p>
-<div class="buttons">
-<a class="btn" href="mailto:samsonmichaelglenn@gmail.com">Email Samson Sports</a>
-<a class="btn" href="https://www.facebook.com/michaelglennsamson" target="_blank" rel="noopener">Facebook Messenger</a>
-<a class="btn" href="https://www.instagram.com/michaelsamsonplays" target="_blank" rel="noopener">Instagram DM</a>
-</div>
-</div>
-</section>
-
-<footer><div class="container footerin"><span>© 2026 Samson Sports. Basketball • Coaching • Community • Sports Retail</span><span>Official social links: Facebook • Instagram • TikTok • YouTube</span></div></footer>
-</body>
-</html>
