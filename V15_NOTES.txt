@@ -1,0 +1,13 @@
+Samson Sports V15 — Full Raptors Archive
+
+Updated:
+- Restored the premium 25-photo Raptors gallery from V14.
+- Restored the detailed Raptors history timeline.
+- Added the complete 26-roster / 503-player archive from All Raptors Roster.xlsx.
+- Added roster search.
+- Kept the Raptors page at /raptors.html.
+- Added /raptors -> /raptors.html redirect to avoid the old 404 route.
+- Preserved Google verification on the homepage.
+- Preserved sitemap/robots SEO files with the correct /raptors.html URL.
+
+Upload all files in this package to the GitHub repository root.

@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/raptors",
+      "destination": "/raptors.html",
+      "permanent": true
+    }
+  ]
+}
