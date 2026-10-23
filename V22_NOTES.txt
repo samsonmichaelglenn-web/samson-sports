@@ -1,0 +1,11 @@
+SAMSON SPORTS — V22 WEBSITE PACKAGE
+
+Based on V21 Mobile Menu Fix. Preserves existing website files, gallery, roster archive, news pages, and mobile navigation.
+
+New additions in raptors.html:
+- Tito Hoops 35 Up championship: JAV Ballers × Uncut × PPL, Clark Airforce City.
+- Quarenta Ballers 35 Up: Team JAV Ballers × Uncut, October 23, 2026 (result not claimed).
+- Kumpares OG Basketball League 35 Up: Team Chivas Regal, championship scheduled October 24, 2026 (not claimed as a win).
+- All 9 user-provided photos added to the existing Raptors gallery; previous gallery photos and history retained.
+
+Upload the CONTENTS of this ZIP to the root of the existing GitHub repository, replacing same-named files when prompted. Do not upload the ZIP file itself.
