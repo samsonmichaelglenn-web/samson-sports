@@ -1,0 +1,12 @@
+SAMSON SPORTS — V26 BALANCED GALLERY UPDATE
+
+- Fixes the five Quarenta Finals photos so they are inside a proper gallery grid.
+- Uses consistent 4:3 photo frames across the Raptors gallery.
+- Shows complete original photos without cropping or stretching (contain fit).
+- Uses three columns on desktop, two on tablet, and one on mobile.
+- Keeps the gallery captions, filters, lightbox image links, and original photo files.
+- Preserves the V25 championship result and all other site content.
+
+Upload the extracted contents to the existing GitHub repository main folder,
+replace matching files, and commit the changes. Vercel should deploy automatically
+if the GitHub integration is active.
