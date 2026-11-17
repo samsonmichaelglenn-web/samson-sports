@@ -1,0 +1,12 @@
+SAMSON SPORTS — V25 UPDATE
+
+- Preserves the complete V24 website package and existing assets.
+- Adds five Quarenta Ballers 35 Up Finals photos to the Raptors gallery.
+- Updates the gallery counter from 34 to 39 curated moments.
+- Updates the Quarenta Ballers 35 Up timeline entry to CHAMPIONS.
+- Records Team JAV Ballers × Uncut as champions against Team LPG.
+- Uses the confirmed Finals date: November 6, 2026.
+
+Upload the extracted contents to the existing GitHub repository's main folder,
+replace matching files, and commit the changes. Vercel should then deploy
+automatically if the repository integration is active.
